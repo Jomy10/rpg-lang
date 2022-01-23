@@ -1,0 +1,17 @@
+char in = (1,0) # Will be consumed by the time warp
+char caster = (1,0) # Will cast the time warp
+spellbook sb = ()
+merchant m = ()
+potion p = (1)
+caster buys sb from m
+in buys sb from m
+in uses sb casting god_speech()
+caster uses sb casting time_warp(in)
+    in shouts
+    in buys p from m
+    in uses p
+end
+# If in's health is 0, it means he is dead and the loop will not run
+char _0 = (1,0)
+caster uses sb casting confuse(_0)
+_0 shouts

@@ -1,0 +1,25 @@
+spellbook sb = ()
+char h = (72, 0)
+char e = (101, 0)
+char l = (108, 0)
+char o = (111, 0)
+char _ = (32, 0)
+char input = (1, 0)
+merchant m = ()
+h buys sb from m
+e buys sb from m
+l buys sb from m
+o buys sb from m
+_ buys sb from m
+input buys sb from m
+input uses sb casting god_speech()
+h whispers sb casting speak()
+e whispers sb casting speak()
+l whispers sb casting speak()
+l whispers sb casting speak()
+o whispers sb casting speak()
+_ whispers sb casting speak()
+input whispers sb casting speak()
+char r = (13, 0)
+r buys sb from m
+r shouts sb casting speak()

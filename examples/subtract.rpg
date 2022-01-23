@@ -1,0 +1,15 @@
+# The first number a user inputs can be negative
+# since a zombie's health can be negative
+zombie base = (1,2)
+char sub = (1,1)
+spellbook sb = ()
+merchant m = ()
+base buys sb from m
+sub buys sb from m
+# Get two input values
+base uses sb casting god_speech()
+sub uses sb casting god_speech()
+sub uses sb casting shift()
+# subtract
+sub attacks base
+base shouts

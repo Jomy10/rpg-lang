@@ -1,0 +1,11 @@
+char r = (1,0)
+spellbook sb = ()
+merchant m = ()
+potion add = (1)
+r buys sb from m
+r buys add from m
+r uses sb casting god_speech()
+r uses sb casting create_potion(add)
+r uses sb casting god_speech()
+r uses add
+r shouts

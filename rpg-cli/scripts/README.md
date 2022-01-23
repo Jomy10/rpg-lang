@@ -1,0 +1,1 @@
+Scripts should be executed from the rpg-cli directory.

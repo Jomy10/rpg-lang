@@ -1,0 +1,13 @@
+[package]
+name = "rpg-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+spinners = "2.0.0"
+spinner = "0.2.1"
+dialoguer = "0.9.0"
+clap = "3.0.10"
+directories-next = "2.0.0"
+rpg-compiler = "0.1.0"
+simple_colors = "1"

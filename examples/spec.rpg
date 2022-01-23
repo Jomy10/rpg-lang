@@ -1,0 +1,89 @@
+# RPG-lang spec examples
+
+### Creating new characters ###
+char a = (10, 5)
+
+char b = (5, 5)
+
+### Printing numbers ###
+b attacks a # a has 5 health
+a shouts # 5
+b attacks a # a has 0 health
+a shouts # invalid, because a is dead
+
+### Printing numbers on 1 line ###
+char a = (10,5) # valid, because a is dead, so a can be used again
+a whispers 
+b attacks a
+a whispers
+# output: 105 (10 and 5)
+
+### Buying from the merchant ###
+merchant m1 = ()
+
+potion p1 = (20)
+spellbook sb1 = ()
+
+a buys p1 from m1
+a buys sb1 from m1
+
+a uses p1 # health: 5 -> 25
+a whispers sb1 casting speak() # output: %
+b attacks a # health: 25 -> 20
+a whispers sb1 casting speak() # output: [SPACE]
+
+potion p2 = (18)
+a buys p1 from m1
+a uses p2 # health: 20 -> 38
+a whispers sb1 casting speak() # ouptput: 8
+
+# Total output of the 3 whisper functions: "% 8"
+
+### Zombies ###
+zombie z1 = (-1, 5)
+z1 shouts # -1
+
+a uses sb1 casting un_zombify(z1)
+# z1 does not exist anymore, because its health is 0 or lower,
+# if its health would have been higher than 0, it would now be
+# a normal character
+
+### Confuse ###
+char c = (1, 1)
+a uses sb casting confuse(c)
+c shouts # 0
+
+### Time_warp ###
+char d = (5, 1)
+char e = (5, 1)
+a uses sb1 casting time_warp(d) # d is killed
+	e shouts
+	char attacker = (1,1)
+	attacker attacks e
+	# attacker is killed at the end of the time_warp
+end
+
+## Reading input from a user ##
+a uses sb1 casting god_speech() # Adds the input to the user's health
+
+## Shifting ##
+char f = (6,1)
+f uses sb1 casting shift()
+f shouts # output: 1
+
+char g = (11, 1)
+f uses sb1 casting god_speech() # e.g. input: 10
+f uses sb1 casting shift()
+f attacks g
+g shouts # output: 1
+
+## Creating potions ##
+char sans = (6, 1)
+potion p = (5)
+sans buys p from merchant
+
+sans uses spellbook casting create_potion(p)
+sans uses p
+sans shouts
+# Output:
+# 12 (6 + 6)

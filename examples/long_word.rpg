@@ -1,0 +1,100 @@
+# This programs prints out the following sentence:
+#  e   s   o   t  e  r   i  c      p  r o  g  r a   m  m  i n  g    l  a n g u   a g e .
+# 101-115-111-116-_-114-105-99-32-112-_-_-103-_-97-109-_-_-110-_-_-108-_-_-_-117-_-_-_-46
+# duplicates: e, g, a, i, n,  , m, r, o
+
+spellbook sb = ()
+merchant me = ()
+# EsOteRic
+char e = (69, 200)
+char r = (114, 0)
+char o = (111, 0)
+char i = (105, 0)
+# Rest of esoteric
+char s = (115, 0)
+char t = (116, 0)
+char c = (99, 0)
+
+potion pe = (32)
+e buys pe from me
+
+e buys sb from me
+r buys sb from me
+o buys sb from me
+s buys sb from me
+t buys sb from me
+i buys sb from me
+c buys sb from me
+
+e whispers sb casting speak()
+e uses pe # First e is a capital, then drink the potion so all e's that follow will be lowercase
+s whispers sb casting speak()
+o whispers sb casting speak()
+t whispers sb casting speak()
+e whispers sb casting speak()
+r whispers sb casting speak()
+i whispers sb casting speak()
+c whispers sb casting speak()
+
+# Kill unnecessary characters
+e attacks s
+e attacks t
+e attacks c
+
+# Already defined pROgRammIng
+# Recurring chars proGrAMMiNG
+
+char n = (110, 0)
+# We give g attack of 3 => if g attacks m, then the value of m will be m instead of p
+char g = (103, 3)
+# We first define m as p
+char m = (112, 0)
+char a = (97, 0)
+char _ = (32, 0)
+
+n buys sb from me
+g buys sb from me
+m buys sb from me
+a buys sb from me
+_ buys sb from me
+
+_ whispers sb casting speak()
+m whispers sb casting speak()
+r whispers sb casting speak()
+o whispers sb casting speak()
+g whispers sb casting speak()
+r whispers sb casting speak()
+a whispers sb casting speak()
+g attacks m
+m whispers sb casting speak()
+m whispers sb casting speak()
+i whispers sb casting speak()
+n whispers sb casting speak()
+g whispers sb casting speak()
+_ whispers sb casting speak()
+
+e attacks _
+e attacks r
+e attacks m
+e attacks i
+
+# language
+# Still in use: e, a, g, n
+char l = (108, 0)
+l buys sb from me
+potion p = (9)
+l buys p from me
+
+l whispers sb casting speak()
+a whispers sb casting speak()
+n whispers sb casting speak()
+g whispers sb casting speak()
+l uses p
+l whispers sb casting speak()
+a whispers sb casting speak()
+g whispers sb casting speak()
+e whispers sb casting speak()
+
+char dot = (46, 0)
+dot buys sb from me
+dot shouts sb casting speak()
