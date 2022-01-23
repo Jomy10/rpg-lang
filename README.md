@@ -59,6 +59,8 @@ rpgc rpgc path/to/source.rpg -v
 
 For more commands, use `rpgc help`.
 
+If you have installed the cli using the manual downloads, you can run it using `./rpgc` or by moving it to your bin directory.
+
 ## Examples
 You can find the examples in the [examples](examples) folder.
 
