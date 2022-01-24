@@ -7,13 +7,15 @@ The rpg language is a compiled esoteric programming language that writes like an
 - [Using the cli](#using-the-cli)
 - [Examples](#examples)
 - [Bugs](#bugs)
+- [Contributing](#contributing)
 - [Specification](#language-specification)
 - [Questions](#questions)
+- [Other links](#other-links)
 - [License](#license)
 
 ## Download
 You will need the Rust compiler to compile this language alongside the rpgc cli.
-You can download the Rus compiler from [rust-lang.org](https://www.rust-lang.org/tools/install).
+You can download the Rust compiler from [rust-lang.org](https://www.rust-lang.org/tools/install).
 But, in short, run `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` on Mac or Linux.
 For Windows, you can download a [standalone installer](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers).
 
@@ -31,11 +33,17 @@ brew tap rpgc && brew install rpgc
 
 ### Minimum operating system:
 - MacOS: 64-bit 10.7+
-- Linux:
-- Windows
+- Linux: 64-bit (kernel 4.2, glibc 2.17+)
+- Windows: 64-bit Windows 7+
 
-If you need a 32-bit binary, you can compile the cli manually by running `cargo build --release`. This will build the
-cli for your machine.
+If you need a 32-bit binary, you can compile the cli manually by running `cargo build --release` inside of the rpg-cli folder . 
+This will build the cli for your machine and put it in the target/release folder
+
+## Contributing
+I welcome all contributions. Feel free to open an issue about anything and optionally a pull request.
+
+Also, if you want to, please take a look at the issues, some of them are improvements I want to make, others are bugs 
+that need ot be fixed. I could use soe help with them.
 
 ## Using the CLI
 To compile your rpg program, you can use the cli:
@@ -124,7 +132,7 @@ actor buys item from merchant
 ```
 
 ### Attacking
-Actors can attack each other, this subtracts the attack of the attacking actor from the health of tha actor being attacked.
+Actors can attack each other, this subtracts the attack of the attacking actor from the health of the actor being attacked.
 
 ``` 
 char a = (10, 3)
@@ -173,7 +181,7 @@ a whispers
 ```
 
 ### Spells
-Characters can use [spell books](#spell-books) to cast spells. They are casting using a spellbook and the spell name is
+Characters can use [spell books](#spell-books) to cast spells. The spell name is
 followed by `()` or `(param)`
 
 ### God_speech
@@ -220,7 +228,7 @@ end
 ```
 
 ### Un_zombify
-Converts a character to a zombie.
+Converts a zombie to a character.
 
 ```
 james_brown uses spell_book casting un_zombify(zombie1)
@@ -262,6 +270,9 @@ Ness shouts
 
 ## Questions
 If you have any questions, feel free to ask them by opening an issue!
+
+## Other links
+- [Wiki page](https://esolangs.org/wiki/Rpg)
 
 ## License
 The compiler and programming language are licensed under the [MIT License](LICENSE).
