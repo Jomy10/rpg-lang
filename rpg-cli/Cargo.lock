@@ -332,7 +332,9 @@ dependencies = [
 
 [[package]]
 name = "rpg-compiler"
-version = "0.1.0"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f9e8e53081512eb084b2e5e6b0be9a32b52d555fc4c64cfc1028026001e5cb79"
 dependencies = [
  "lazy_static",
  "regex",

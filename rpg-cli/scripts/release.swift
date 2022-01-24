@@ -1,6 +1,7 @@
 #!/usr/bin/swift
 // Environment variables
 // BUILD=BOOL (default=false)
+// This script is not currenlty used
 
 import Foundation
 
