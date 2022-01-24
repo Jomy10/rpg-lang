@@ -4,5 +4,3 @@
 ./scripts/build.sh
 
 ./scripts/package.sh
-
-./scripts/sha.sh

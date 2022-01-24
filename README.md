@@ -20,9 +20,9 @@ But, in short, run `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | 
 For Windows, you can download a [standalone installer](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers).
 
 You can download the rpgc cli manually:
-- [MacOS](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.0/macos-x86_64.tar.gz)
-- [Linux](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.0/linux-aarch64.tar.gz)
-- [Windows](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.0/windows-x86_64.tar.gz)
+- [MacOS](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/macos-x86_64.tar.gz)
+- [Linux](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/linux-aarch64.tar.gz)
+- [Windows](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/windows-x86_64.tar.gz)
 
 If you have **HomeBrew** installed, you can also run:
 ```
