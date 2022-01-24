@@ -1,8 +1,9 @@
 [package]
 name = "rpg-compiler"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 readme = "README.md"
+repository = "https://github.com/jomy10/rpg-lang"
 authors = ["Jonas Everaert <info@jonaseveraert.be>"]
 description = "A compiler library for the rpg esoteric programming language"
 license = "MIT"
