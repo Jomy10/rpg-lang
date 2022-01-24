@@ -387,7 +387,7 @@ impl<'a> Generator<'a> {
                                 }};
                                 while loop_times != 0 {{
                                     {}
-                                    i{consumed}.attacked(1);
+                                    i{consumed}.attacked(1, &mut game);
                                     
                                     loop_times =  match &mut i{consumed}.health {{
                                         ActorHealth::Char(val) => {{
