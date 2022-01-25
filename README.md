@@ -29,7 +29,7 @@ If you have **HomeBrew** installed, you can also run:
 brew tap rpgc && brew install rpgc
 ```
 
-*Current version: v0.1.0*
+*Current version: v0.1.1*
 
 ### Minimum operating system:
 - MacOS: 64-bit 10.7+
@@ -227,14 +227,14 @@ end
 # 1
 ```
 
-### Un_zombify
+#### Un_zombify
 Converts a zombie to a character.
 
 ```
 james_brown uses spell_book casting un_zombify(zombie1)
 ```
 
-### Confuse 
+#### Confuse 
 When a character is confused, it will output its health - 1 when shouting or whispering.
 
 ```
@@ -242,7 +242,7 @@ steven uses spell_book casting confuse(other_char)
 other_char shouts # Will output the other_char's health - 1 e.g. other_char = (1,2), so the output will be: 0
 ```
 
-### Create_potion
+#### Create_potion
 Characters can change the value of a potion
 
 ```
@@ -257,7 +257,7 @@ sans shouts
 # 12 (6 + 6)
 ```
 
-### Shift
+#### Shift
 Shift swaps a character's health and attack.
 
 ```
