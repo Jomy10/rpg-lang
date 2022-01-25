@@ -184,7 +184,7 @@ a whispers
 Characters can use [spell books](#spell-books) to cast spells. The spell name is
 followed by `()` or `(param)`
 
-### God_speech
+#### God_speech
 This will read whatever number the user inputs
 
 ```
