@@ -4,6 +4,7 @@ The rpg language is a compiled esoteric programming language that writes like an
 
 ## Table of contents
 - [Download](#download)
+- [Contributing](#contributing)
 - [Using the cli](#using-the-cli)
 - [Examples](#examples)
 - [Bugs](#bugs)
@@ -19,7 +20,7 @@ You can download the Rust compiler from [rust-lang.org](https://www.rust-lang.or
 But, in short, run `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` on Mac or Linux.
 For Windows, you can download a [standalone installer](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers).
 
-You can download the rpgc cli manually:
+You can then download the rpgc cli manually:
 - [MacOS](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/macos-x86_64.tar.gz)
 - [Linux](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/linux-aarch64.tar.gz)
 - [Windows](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/windows-x86_64.tar.gz)
@@ -51,6 +52,8 @@ To compile your rpg program, you can use the cli:
 ```bash
 rpgc path/to/source.rpg
 ```
+
+This command will create an executable file called `rpg` at your current location (`rpg.exe` on Windows). Make sure you don't have  a file called rpg there, as it will be overwritten.
 
 To run your program, run `./rpg`. You can also combine these 2:
 
