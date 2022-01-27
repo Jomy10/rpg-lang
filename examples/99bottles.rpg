@@ -1,3 +1,5 @@
+#!/usr/local/bin/rpgc
+
 # 99 bottles of beer on the wall,
 # 99 bottles of beer.
 # Take one down, pass it around,
@@ -8,7 +10,7 @@
 # No bottles of beer on the wall.
 
 char caster = (110, 1) # holds n
-char bottles = (99, 0)
+char bottles = (99, 66)
 char last_sentence = (99,4) # This character will shadow bottles, but will be confused
 spellbook sb = ()
 merchant me = ()
@@ -20,14 +22,20 @@ char b_a = (98, 8)
 potion pba = (1)
 char ottles = (111, 16)
 char beer = (98, 12)
-char f_wall = (102, 0)
+char f_wall = (102, 10)
 char the = (116, 22)
+char etc = (97, 0)
 potion o_to_t = (5)
 potion e_to_s = (14)
 potion b_to_e = (3)
 potion e_to_r = (13)
 potion f_to_w = (17)
 potion e_to_t = (15)
+potion a_to_k = (10)
+potion e_to_n = (9)
+potion e_to_w = (19)
+potion comma_to_p = (68)
+potion r_to_u = (3)
 
 # 6 chars now in use
 
@@ -37,6 +45,7 @@ ottles buys sb from me
 beer buys sb from me
 f_wall buys sb from me
 the buys sb from me
+etc buys sb from me
 
 caster uses sb casting confuse(last_sentence)
 caster uses sb casting time_warp(bottles)
@@ -151,7 +160,76 @@ caster uses sb casting time_warp(bottles)
 
 	_ shouts sb casting speak()
 
-	## TODO: pass it around ##	
+	## TODO: pass it around ##
+	the whispers sb casting speak() # t
+	etc whispers sb casting speak() # a
+	etc buys a_to_k from me
+	etc uses a_to_k
+	etc whispers sb casting speak() # k
+	_ attacks etc
+	etc buys pba from me
+	etc uses pba
+	etc whispers sb casting speak() # e
+	_ whispers sb casting speak()
+
+	ottles whispers sb casting speak() # o
+	etc buys e_to_n from me
+	etc uses e_to_n
+	etc whispers sb casting speak() # n
+	b_a attacks etc
+	caster attacks etc
+	etc whispers sb casting speak() # e
+	_ whispers sb casting speak()
+
+	caster attacks etc
+	etc whispers sb casting speak() # d
+	ottles whispers sb casting speak() # o
+	etc buys e_to_w from me
+	etc uses e_to_w
+	etc whispers sb casting speak() # w
+	b_a attacks etc 
+	caster attacks etc 
+	etc whispers sb casting speak() # n
+	bottles attacks etc
+	etc whispers sb casting speak()
+	_ whispers sb casting speak()
+
+	etc buys comma_to_p from me
+	etc uses comma_to_p
+	etc whispers sb casting speak() # p
+	ottles attacks etc
+	etc buys pba from me
+	etc uses pba
+	etc whispers sb casting speak() # a
+	etc buys e_to_w from me
+	etc uses e_to_w
+	caster attacks etc
+	etc whispers sb casting speak() # s	
+	etc whispers sb casting speak() # s
+	_ whispers sb casting speak()
+
+	f_wall attacks etc
+	etc whispers sb casting speak() # i
+	the whispers sb casting speak() # t
+	_ whispers sb casting speak()
+
+	last_sentence attacks etc
+	last_sentence attacks etc
+	etc whispers sb casting speak() # a
+	etc buys f_to_w from me
+	etc uses f_to_w
+	etc whispers sb casting speak() # r
+	ottles whispers sb casting speak() # o
+	etc buys r_to_u from me
+	etc uses r_to_u
+	etc whispers sb casting speak() # u
+	_ attacks etc
+	etc whispers sb casting speak() # n
+	f_wall attacks etc
+	etc shouts sb casting speak() # d
+	caster attacks etc
+	caster attacks etc
+	caster attacks etc
 
 	## x-1 bottles of beer ##
 	last_sentence whispers
