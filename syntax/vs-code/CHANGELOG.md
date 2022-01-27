@@ -8,3 +8,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Initial release
 
+## [0.1.3]
+
+- Fixed image not loading

@@ -2,7 +2,7 @@
     "name": "rpg-lang",
     "displayName": "rpg",
     "description": "Language support for the rpg esoteric programming language",
-    "version": "0.1.0",
+    "version": "0.1.3",
     "publisher": "JonasEveraert",
     "engines": {
         "vscode": "^1.63.0"
