@@ -4,6 +4,7 @@ The rpg language is a compiled esoteric programming language that writes like an
 
 ## Table of contents
 - [Download](#download)
+- [Contributing](#contributing)
 - [Using the cli](#using-the-cli)
 - [Examples](#examples)
 - [Bugs](#bugs)
@@ -19,7 +20,7 @@ You can download the Rust compiler from [rust-lang.org](https://www.rust-lang.or
 But, in short, run `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh` on Mac or Linux.
 For Windows, you can download a [standalone installer](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers).
 
-You can download the rpgc cli manually:
+You can then download the rpgc cli manually:
 - [MacOS](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/macos-x86_64.tar.gz)
 - [Linux](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/linux-aarch64.tar.gz)
 - [Windows](https://github.com/Jomy10/rpg-lang/releases/download/v0.1.1/windows-x86_64.tar.gz)
@@ -29,7 +30,7 @@ If you have **HomeBrew** installed, you can also run:
 brew tap rpgc && brew install rpgc
 ```
 
-*Current version: v0.1.0*
+*Current version: v0.1.1*
 
 ### Minimum operating system:
 - MacOS: 64-bit 10.7+
@@ -51,6 +52,8 @@ To compile your rpg program, you can use the cli:
 ```bash
 rpgc path/to/source.rpg
 ```
+
+This command will create an executable file called `rpg` at your current location (`rpg.exe` on Windows). Make sure you don't have  a file called rpg there, as it will be overwritten.
 
 To run your program, run `./rpg`. You can also combine these 2:
 
@@ -184,7 +187,7 @@ a whispers
 Characters can use [spell books](#spell-books) to cast spells. The spell name is
 followed by `()` or `(param)`
 
-### God_speech
+#### God_speech
 This will read whatever number the user inputs
 
 ```
@@ -227,14 +230,14 @@ end
 # 1
 ```
 
-### Un_zombify
+#### Un_zombify
 Converts a zombie to a character.
 
 ```
 james_brown uses spell_book casting un_zombify(zombie1)
 ```
 
-### Confuse 
+#### Confuse 
 When a character is confused, it will output its health - 1 when shouting or whispering.
 
 ```
@@ -242,7 +245,7 @@ steven uses spell_book casting confuse(other_char)
 other_char shouts # Will output the other_char's health - 1 e.g. other_char = (1,2), so the output will be: 0
 ```
 
-### Create_potion
+#### Create_potion
 Characters can change the value of a potion
 
 ```
@@ -257,7 +260,7 @@ sans shouts
 # 12 (6 + 6)
 ```
 
-### Shift
+#### Shift
 Shift swaps a character's health and attack.
 
 ```
