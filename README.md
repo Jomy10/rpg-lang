@@ -4,6 +4,7 @@ The rpg language is a compiled esoteric programming language that writes like an
 
 ## Table of contents
 - [Download](#download)
+- [Tools](#tools)
 - [Contributing](#contributing)
 - [Using the cli](#using-the-cli)
 - [Examples](#examples)
@@ -43,7 +44,7 @@ This will build the cli for your machine and put it in the target/release folder
 ## Tools
 To make writing in this language easier, there is a VSCode extension for syntax highlighting. You can get it from the [VSCode Marketplace](hittps://marketplace.visualstudio.com/items?itemName=JonasEveraert.rpg-lang).
 
-If you use a different IDE and want to add support for RPG, feel free to open a pull request!
+[If you use a different IDE and want to add support for RPG, feel free to open a pull request!](https://github.com/Jomy10/rpg-lang/issues/3)
 
 ## Contributing
 I welcome all contributions. Feel free to open an issue about anything and optionally a pull request.
