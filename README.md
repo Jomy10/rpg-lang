@@ -42,7 +42,7 @@ If you need a 32-bit binary, you can compile the cli manually by running `cargo 
 This will build the cli for your machine and put it in the target/release folder
 
 ## Tools
-To make writing in this language easier, there is a VSCode extension for syntax highlighting. You can get it from the [VSCode Marketplace](hittps://marketplace.visualstudio.com/items?itemName=JonasEveraert.rpg-lang).
+To make writing in this language easier, there is a VSCode extension for syntax highlighting. You can get it from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=JonasEveraert.rpg-lang).
 
 [If you use a different IDE and want to add support for RPG, feel free to open a pull request!](https://github.com/Jomy10/rpg-lang/issues/3)
 
