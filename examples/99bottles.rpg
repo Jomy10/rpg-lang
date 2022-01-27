@@ -1,0 +1,195 @@
+# 99 bottles of beer on the wall,
+# 99 bottles of beer.
+# Take one down, pass it around,
+# 98 bottles of beer on the wall.
+# 
+# 98 ...
+# 
+# No bottles of beer on the wall.
+
+char caster = (110, 1) # holds n
+char bottles = (99, 0)
+char last_sentence = (99,4) # This character will shadow bottles, but will be confused
+spellbook sb = ()
+merchant me = ()
+caster buys sb from me
+
+# We already have 3 chars, so 7 left
+char _ = (32, 7)
+char b_a = (98, 8)
+potion pba = (1)
+char ottles = (111, 16)
+char beer = (98, 12)
+char f_wall = (102, 0)
+char the = (116, 22)
+potion o_to_t = (5)
+potion e_to_s = (14)
+potion b_to_e = (3)
+potion e_to_r = (13)
+potion f_to_w = (17)
+potion e_to_t = (15)
+
+# 6 chars now in use
+
+_ buys sb from me
+b_a buys sb from me
+ottles buys sb from me
+beer buys sb from me
+f_wall buys sb from me
+the buys sb from me
+
+caster uses sb casting confuse(last_sentence)
+caster uses sb casting time_warp(bottles)
+	# If you cheat, you might be able to compress this loop down a lot more
+
+	## x bottles of beer on the wall ##
+	bottles whispers
+	_ whispers sb casting speak()	
+	b_a whispers sb casting speak() # b
+    ottles whispers sb casting speak() # o
+	ottles buys o_to_t from me
+	ottles uses o_to_t
+	ottles whispers sb casting speak() # t
+    ottles whispers sb casting speak() # t
+	b_a attacks ottles
+	ottles whispers sb casting speak() # l
+	_ attacks ottles
+	ottles whispers sb casting speak() # e
+	ottles buys e_to_s from me
+	ottles uses e_to_s
+	ottles whispers sb casting speak() # s
+	last_sentence attacks ottles # Go back to o
+	_ whispers sb casting speak()
+
+	# of
+	ottles whispers sb casting speak() # o
+	f_wall whispers sb casting speak() # f
+	_ whispers sb casting speak()	
+	
+	beer whispers sb casting speak() # b
+	beer buys b_to_e from me
+	beer uses b_to_e
+	beer whispers sb casting speak() # e
+	beer whispers sb casting speak() # e
+	beer buys e_to_r from me
+	beer uses e_to_r
+	beer whispers sb casting speak() # r
+	ottles attacks beer # back to b
+
+	_ whispers sb casting speak()	
+
+	ottles whispers sb casting speak() # o
+	caster whispers sb casting speak() # n
+
+	_ whispers sb casting speak()
+
+	the whispers sb casting speak() # t
+	beer attacks the
+	the whispers sb casting speak() # h
+	caster attacks the
+	caster attacks the
+	caster attacks the
+	the whispers sb casting speak() # e
+	the buys e_to_t from me
+	the uses e_to_t
+	
+
+	_ whispers sb casting speak()
+
+	f_wall buys f_to_w from me
+	f_wall uses f_to_w
+	f_wall whispers sb casting speak() # w
+	
+	the attacks f_wall
+	f_wall whispers sb casting speak() # a
+	f_wall buys e_to_r from me
+	f_wall uses e_to_r
+	caster attacks f_wall
+	caster attacks f_wall
+	f_wall whispers sb casting speak() # l
+	f_wall whispers sb casting speak() # l
+
+	# back to f
+	caster attacks f_wall
+	caster attacks f_wall
+	last_sentence attacks f_wall
+
+	_ shouts sb casting speak()
+
+	## x bottles of beer ##
+	bottles whispers
+	_ whispers sb casting speak()	
+	b_a whispers sb casting speak() # b
+    ottles whispers sb casting speak() # o
+	ottles buys o_to_t from me
+	ottles uses o_to_t
+	ottles whispers sb casting speak() # t
+    ottles whispers sb casting speak() # t
+	b_a attacks ottles
+	ottles whispers sb casting speak() # l
+	_ attacks ottles
+	ottles whispers sb casting speak() # e
+	ottles buys e_to_s from me
+	ottles uses e_to_s
+	ottles whispers sb casting speak() # s
+	last_sentence attacks ottles # Go back to o
+	_ whispers sb casting speak()
+
+	ottles whispers sb casting speak() # o
+	f_wall whispers sb casting speak() # f
+	_ whispers sb casting speak()	
+	
+	beer whispers sb casting speak() # b
+	beer buys b_to_e from me
+	beer uses b_to_e
+	beer whispers sb casting speak() # e
+	beer whispers sb casting speak() # e
+	beer buys e_to_r from me
+	beer uses e_to_r
+	beer whispers sb casting speak() # r
+	ottles attacks beer # back to b
+
+	_ shouts sb casting speak()
+
+	## TODO: pass it around ##	
+
+	## x-1 bottles of beer ##
+	last_sentence whispers
+
+	_ whispers sb casting speak()	
+	b_a whispers sb casting speak() # b
+    ottles whispers sb casting speak() # o
+	ottles buys o_to_t from me
+	ottles uses o_to_t
+	ottles whispers sb casting speak() # t
+    ottles whispers sb casting speak() # t
+	b_a attacks ottles
+	ottles whispers sb casting speak() # l
+	_ attacks ottles
+	ottles whispers sb casting speak() # e
+	ottles buys e_to_s from me
+	ottles uses e_to_s
+	ottles whispers sb casting speak() # s
+	last_sentence attacks ottles # Go back to o
+	_ whispers sb casting speak()
+
+	ottles whispers sb casting speak() # o
+	f_wall whispers sb casting speak() # f
+	_ whispers sb casting speak()	
+	
+	beer whispers sb casting speak() # b
+	beer buys b_to_e from me
+	beer uses b_to_e
+	beer whispers sb casting speak() # e
+	beer whispers sb casting speak() # e
+	beer buys e_to_r from me
+	beer uses e_to_r
+	beer whispers sb casting speak() # r
+	ottles attacks beer # back to b	
+
+	_ shouts sb casting speak()
+	_ shouts sb casting speak()
+
+	caster attacks last_sentence
+end
+

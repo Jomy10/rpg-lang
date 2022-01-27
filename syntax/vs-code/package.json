@@ -1,0 +1,25 @@
+{
+    "name": "rpg",
+    "displayName": "rpg",
+    "description": "Language support for the rpg esoteric programming language",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rpg",
+            "aliases": ["rpg", "rpg"],
+            "extensions": [".rpg"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rpg",
+            "scopeName": "main.rpg",
+            "path": "./syntaxes/rpg.tmLanguage.json"
+        }]
+    }
+}
