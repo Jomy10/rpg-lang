@@ -1,11 +1,13 @@
 {
-    "name": "rpg",
+    "name": "rpg-lang",
     "displayName": "rpg",
     "description": "Language support for the rpg esoteric programming language",
     "version": "0.1.0",
+    "publisher": "JonasEveraert",
     "engines": {
         "vscode": "^1.63.0"
     },
+    "repository": "https://github.com/Jomy10/rpg-lang/",
     "categories": [
         "Programming Languages"
     ],

@@ -6,7 +6,7 @@ This VSCode extension provides basic syntax highlighting for the [RPG esoteric p
 
 The extension adds syntax highlighting for the rpg language:
 
-![syntax highlighting](images/screenshot.png)
+![syntax highlighting](https://github.com/Jomy10/rpg-lang/blob/master/syntax/vs-code/images/screenshot.png)
 
 ## Known Issues
 

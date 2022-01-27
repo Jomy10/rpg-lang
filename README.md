@@ -40,6 +40,11 @@ brew tap rpgc && brew install rpgc
 If you need a 32-bit binary, you can compile the cli manually by running `cargo build --release` inside of the rpg-cli folder . 
 This will build the cli for your machine and put it in the target/release folder
 
+## Tools
+To make writing in this language easier, there is a VSCode extension for syntax highlighting. You can get it from the [VSCode Marketplace](hittps://marketplace.visualstudio.com/items?itemName=JonasEveraert.rpg-lang).
+
+If you use a different IDE and want to add support for RPG, feel free to open a pull request!
+
 ## Contributing
 I welcome all contributions. Feel free to open an issue about anything and optionally a pull request.
 
